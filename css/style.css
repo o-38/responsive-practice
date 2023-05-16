@@ -2,12 +2,15 @@
   width: 1100px;
   margin: 0 auto;
 }
+.box1{
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+  margin: 0 auto;
+}
 @media screen and (max-width:1100px) {
   .box1{
-    width: 400px;
-    height: 400px;
     background: #ff0000;
-    margin: 0 auto;
   }
 }
 @media screen and (max-width:959px){
@@ -18,12 +21,15 @@
     margin: 0 auto;
   }
 }
+.box2{
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+  margin: 0 auto;
+}
 @media screen and (max-width:1100px){
   .box2{
-    width: 300px;
-    height: 300px;
     background: #ff0000;
-    margin: 0 auto;
   }
 }
 @media screen and (max-width:959px){
@@ -34,18 +40,22 @@
 .content{
   display: flex;
 }
-.box3,.box4,.box5,.box6{
+.box3,.box4,.box5,.box6,.box7{
   width: 300px;
   height: 300px;
   margin: 0 auto;
 }
+.box3{
+  background: #0008ff;
+}
+.box4{
+  background: #22ff00;
+}
 @media screen and (max-width:1100px) {
   .box3{
-    background: #0008ff;
     margin-right: 75px;
   }
   .box4{
-    background: #22ff00;
     margin-left: 75px;
   }
 }
@@ -69,13 +79,17 @@
   display: block;
   clear: both;
 }
+.box5{
+  background: #ff0000;
+}
+.box6{
+  background: #0008ff;
+}
 @media screen and (max-width:1100px) {
   .box5{
-    background: #ff0000;
     float: left;
   }
   .box6{
-    background: #0008ff;
     float: left;
   }
 }
@@ -96,6 +110,15 @@
   display: flex;
   justify-content: center;
 }
+.box7{
+  background: #ff0000;
+}
+.box8{
+  background: #0008ff;
+}
+.box9{
+  background: #ff8400;
+}
 @media screen and (max-width:1100px){
   .box7{
     background: #ff0000;
@@ -106,6 +129,15 @@
   .box9{
     background: #ff8400;
   }
+}
+.box10{
+  background: #00ff51;
+}
+.box11{
+  background: #d4ff00;
+}
+.box12{
+  background: #ff00e1;
 }
 @media screen and (max-width:959px) {
   .content3{
