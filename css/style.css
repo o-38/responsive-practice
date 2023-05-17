@@ -70,14 +70,9 @@
 .content2{
   width: 100%;
 }
-.double{
+.content2{
   width: 600px;
   margin: 0 auto;
-}
-.content2::after{
-  content: "";
-  display: block;
-  clear: both;
 }
 .box5{
   background: #ff0000;
@@ -92,6 +87,11 @@
   .box6{
     float: left;
   }
+}
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 @media screen and (max-width:959px) {
   .box5,.box6{
@@ -130,31 +130,32 @@
     background: #ff8400;
   }
 }
-.box10{
-  background: #00ff51;
-}
-.box11{
-  background: #d4ff00;
-}
-.box12{
-  background: #ff00e1;
-}
 @media screen and (max-width:959px) {
   .content3{
-    display: flex;
-    justify-content: center;
     flex-direction: row-reverse;
   }
 }
+.box10{
+  background: #00ff51;
+  order: 1;
+}
+.box11{
+  background: #d4ff00;
+  order: 2;
+}
+.box12{
+  background: #ff00e1;
+  order: 3;
+}
 @media screen and (max-width:1100px){
   .box10{
-    background: #00ff51;
+    order: 1;
   }
   .box11{
-    background: #d4ff00;
+    order: 2;
   }
   .box12{
-    background: #ff00e1;
+    order: 3;
   }
 }
 @media screen and (max-width:959px) {
@@ -178,12 +179,15 @@
 }
 .box13{
   background: #ff0000;
+  order: 1;
 }
 .box14{
   background: #00ff51;
+  order: 2;
 }
 .box15{
   background: #0008ff;
+  order: 3;
 }
 @media screen and (min-width:960px) and (max-width:1100px) {
   .box13{
