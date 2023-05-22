@@ -8,7 +8,7 @@
   background: #ff0000;
   margin: 0 auto;
 }
-@media screen and (max-width:1100px) {
+@media screen and (min-width:960px) {
   .box1{
     background: #ff0000;
   }
@@ -27,7 +27,7 @@
   background: #ff0000;
   margin: 0 auto;
 }
-@media screen and (max-width:1100px){
+@media screen and (min-width:960px){
   .box2{
     background: #ff0000;
   }
@@ -51,7 +51,7 @@
 .box4{
   background: #22ff00;
 }
-@media screen and (max-width:1100px) {
+@media screen and (min-width:960px) {
   .box3{
     margin-right: 75px;
   }
@@ -80,7 +80,7 @@
 .box6{
   background: #0008ff;
 }
-@media screen and (max-width:1100px) {
+@media screen and (min-width:960px) {
   .box5{
     float: left;
   }
@@ -122,7 +122,7 @@
 .box9{
   background: #ff8400;
 }
-@media screen and (max-width:1100px){
+@media screen and (min-width:960px){
   .box7{
     background: #ff0000;
   }
@@ -150,7 +150,7 @@
   background: #ff00e1;
   order: 3;
 }
-@media screen and (max-width:1100px){
+@media screen and (min-width:960px){
   .box10{
     order: 1;
   }
@@ -182,34 +182,19 @@
 }
 .box13{
   background: #ff0000;
-  order: 1;
 }
 .box14{
   background: #00ff51;
-  order: 2;
 }
 .box15{
   background: #0008ff;
-  order: 3;
 }
 @media screen and (max-width:959px){
   .box13{
     display: none;
   }
-  .box14{
-    order: 2;
-  }
-  .box15{
-    order: 1;
-  }
 }
 @media screen and (min-width:960px) {
-  .box13{
-    order: 1;
-  }
-  .box14{
-    order: 2;
-  }
   .box15{
     display: none;
   }
