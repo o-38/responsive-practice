@@ -8,34 +8,11 @@
   background: #ff0000;
   margin: 0 auto;
 }
-@media screen and (min-width:960px) {
-  .box1{
-    background: #ff0000;
-  }
-}
-@media screen and (max-width:959px){
-  .box1{
-    width: 200px;
-    height: 200px;
-    background: #ff0000;
-    margin: 0 auto;
-  }
-}
 .box2{
   width: 300px;
   height: 300px;
   background: #ff0000;
   margin: 0 auto;
-}
-@media screen and (min-width:960px){
-  .box2{
-    background: #ff0000;
-  }
-}
-@media screen and (max-width:959px){
-  .box2{
-    background: #007bff;
-  }
 }
 .content{
   display: flex;
@@ -51,22 +28,6 @@
 .box4{
   background: #22ff00;
 }
-@media screen and (min-width:960px) {
-  .box3{
-    margin-right: 75px;
-  }
-  .box4{
-    margin-left: 75px;
-  }
-}
-@media screen and (max-width:959px){
-  .box3{
-    margin-right: 25px;
-  }
-  .box4{
-    margin-left: 25px;
-  }
-}
 .content2{
   width: 100%;
 }
@@ -74,29 +35,18 @@
   width: 600px;
   margin: 0 auto;
 }
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 .box5{
   background: #ff0000;
+  float: left;
 }
 .box6{
   background: #0008ff;
-}
-@media screen and (min-width:960px) {
-  .box5{
-    float: left;
-  }
-  .box6{
-    float: left;
-  }
-}
-  .clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-@media screen and (max-width:959px) {
-  .box5,.box6{
-    float: none;
-  }
+  float: left;
 }
 .content3,.content4{
   display: flex;
@@ -122,22 +72,6 @@
 .box9{
   background: #ff8400;
 }
-@media screen and (min-width:960px){
-  .box7{
-    background: #ff0000;
-  }
-  .box8{
-    background: #0008ff;
-  }
-  .box9{
-    background: #ff8400;
-  }
-}
-@media screen and (max-width:959px) {
-  .content3{
-    flex-direction: row-reverse;
-  }
-}
 .box10{
   background: #00ff51;
   order: 1;
@@ -149,28 +83,6 @@
 .box12{
   background: #ff00e1;
   order: 3;
-}
-@media screen and (min-width:960px){
-  .box10{
-    order: 1;
-  }
-  .box11{
-    order: 2;
-  }
-  .box12{
-    order: 3;
-  }
-}
-@media screen and (max-width:959px) {
-  .box10{
-    order: 2;
-  }
-  .box11{
-    order: 3;
-  }
-  .box12{
-    order: 1;
-  }
 }
 .content5{
   display: flex;
@@ -188,6 +100,49 @@
 }
 .box15{
   background: #0008ff;
+}
+@media screen and (max-width:959px){
+  .box1{
+    width: 200px;
+    height: 200px;
+    background: #ff0000;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width:959px){
+  .box2{
+    background: #007bff;
+  }
+}
+
+@media screen and (max-width:959px){
+  .box3{
+    margin-right: 25px;
+  }
+  .box4{
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width:959px) {
+  .box5,.box6{
+    float: none;
+  }
+}
+@media screen and (max-width:959px) {
+  .content3{
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width:959px) {
+  .box10{
+    order: 2;
+  }
+  .box11{
+    order: 3;
+  }
+  .box12{
+    order: 1;
+  }
 }
 @media screen and (max-width:959px){
   .box13{
