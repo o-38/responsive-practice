@@ -24,9 +24,11 @@
 }
 .box3{
   background: #0008ff;
+  margin-right: 75px;
 }
 .box4{
   background: #22ff00;
+  margin-left: 75px;
 }
 .content2{
   width: 100%;
